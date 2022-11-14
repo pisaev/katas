@@ -12,11 +12,11 @@ class Year:
 def test_year_is_not_a_leap_year_if_not_divisible_by_4():
 	assert Year(1997).is_leap() == False
 
-def test_year_is_a_year_is_a_leap_year_if_divisible_by_4():
+def test_year_is_a_leap_year_if_divisible_by_4():
 	assert Year(1996).is_leap() == True
 
-def test_year_is_a_year_is_a_leap_year_if_divisible_by_400():
+def test_year_is_a_leap_year_if_divisible_by_400():
 	assert Year(1600).is_leap() == True
 
-def test_year_is_a_year_is_not_a_leap_year_if_divisible_by_100_but_not_by_400():
+def test_year_is_not_a_leap_year_if_divisible_by_100_but_not_by_400():
 	assert Year(1800).is_leap() == False
